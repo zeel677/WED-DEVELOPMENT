@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect | Academic Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="notice" id="notice" role="status">
+    <span>📢 Welcome to CampusConnect — your academic information in one place.</span>
+    <button class="icon-btn" id="closeNotice" aria-label="Dismiss announcement">✕</button>
+  </div>
+
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <a class="brand" href="#" id="brandLink"><span class="brand-mark">C</span> CampusConnect</a>
+    <nav class="topnav" id="topnav">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#modules">Modules</a>
+      <a href="#announcements">Announcements</a>
+    </nav>
+    <div class="top-actions">
+      <button class="secondary-btn" id="themeBtn">🌙 Dark mode</button>
+      <button class="secondary-btn hidden" id="logoutBtn">Log out</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="login-view" id="loginView">
+      <div class="login-copy">
+        <span class="eyebrow">STUDENT ACADEMIC MANAGEMENT SYSTEM</span>
+        <h1>One campus.<br><span>Every connection.</span></h1>
+        <p>Access attendance, results, timetables, course registration, study materials, leave requests and faculty services from one dashboard.</p>
+        <div class="feature-pills">
+          <span>✓ Role-based dashboards</span><span>✓ Academic resources</span><span>✓ Responsive interface</span>
+        </div>
+        <div class="mini-stat-row">
+          <div><strong>3</strong><small>User roles</small></div>
+          <div><strong>10+</strong><small>Academic tools</small></div>
+          <div><strong>1</strong><small>Unified portal</small></div>
+        </div>
+      </div>
+      <form class="login-card" id="loginForm">
+        <div class="card-icon">🔐</div>
+        <h2>Sign in to your portal</h2>
+        <p class="muted">Choose a demo role and enter any name or ID.</p>
+        <label for="role">Login as</label>
+        <select id="role" required>
+          <option value="student">Student</option>
+          <option value="faculty">Faculty</option>
+          <option value="admin">Administrator</option>
+        </select>
+        <label for="userName">Name or user ID</label>
+        <input id="userName" placeholder="e.g. Zeel Patel / STU102" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter any demo password" required>
+        <button class="primary-btn full-width" type="submit">Login to dashboard <span>→</span></button>
+        <p class="demo-note">Demo only: any non-empty name and password will work. This is not secure authentication.</p>
+      </form>
+    </section>
+
+    <section class="app-view hidden" id="appView">
+      <div class="welcome-row" id="dashboard">
+        <div>
+          <span class="eyebrow" id="roleLabel">STUDENT PORTAL</span>
+          <h1 id="welcomeTitle">Welcome back!</h1>
+          <p class="muted" id="welcomeSubtitle">Here is your academic overview.</p>
+        </div>
+        <div class="date-chip" id="todayDate">CampusConnect</div>
+      </div>
+
+      <div class="stats-grid" id="statsGrid"></div>
+
+      <div class="dashboard-grid">
+        <section class="panel main-panel">
+          <div class="section-heading">
+            <div><span class="eyebrow">QUICK ACCESS</span><h2>Academic modules</h2></div>
+            <span class="subtle-tag" id="moduleCount">Modules</span>
+          </div>
+          <div class="module-grid" id="moduleGrid"></div>
+        </section>
+        <aside class="panel" id="announcements">
+          <div class="section-heading">
+            <div><span class="eyebrow">CAMPUS UPDATES</span><h2>Announcements</h2></div>
+            <span class="live-dot"></span>
+          </div>
+          <div class="announcement-list" id="announcementList"></div>
+          <button class="text-btn" id="showAllNotices">View all notices →</button>
+        </aside>
+      </div>
+
+      <section class="panel details-panel hidden" id="detailsPanel">
+        <div class="section-heading">
+          <div><span class="eyebrow">MODULE WORKSPACE</span><h2 id="detailsTitle">Module</h2></div>
+          <button class="secondary-btn" id="closeDetails">Close ✕</button>
+        </div>
+        <div id="detailsContent"></div>
+      </section>
+
+      <section class="panel faq-panel" id="modules">
+        <div class="section-heading">
+          <div><span class="eyebrow">NEED HELP?</span><h2>Frequently asked questions</h2></div>
+        </div>
+        <div class="faq-list">
+          <button class="faq-question" aria-expanded="false">How do I view my attendance? <span>＋</span></button>
+          <div class="faq-answer">Log in as a Student and select the Attendance module to view the sample attendance summary.</div>
+          <button class="faq-question" aria-expanded="false">Who can upload marks and study material? <span>＋</span></button>
+          <div class="faq-answer">Faculty can use the Results and Study Material modules in this front-end demonstration.</div>
+          <button class="faq-question" aria-expanded="false">How do I apply for leave? <span>＋</span></button>
+          <div class="faq-answer">Open Leave Management, enter the dates and reason, and submit the demo request.</div>
+        </div>
+      </section>
+
+      <section class="panel gallery-panel">
+        <div class="section-heading">
+          <div><span class="eyebrow">CAMPUS LIFE</span><h2>Explore campus</h2></div>
+        </div>
+        <div class="slider">
+          <button class="slider-arrow" id="prevSlide" aria-label="Previous slide">‹</button>
+          <div class="slide-content" id="slideContent">
+            <div class="slide-visual visual-one">🎓</div>
+            <div><h3>Learn, grow, achieve</h3><p>Keep your academic journey organized with CampusConnect.</p></div>
+          </div>
+          <button class="slider-arrow" id="nextSlide" aria-label="Next slide">›</button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer><span>© 2026 CampusConnect</span><span>Academic Management System · Practical 1</span></footer>
+
+  <div class="modal-backdrop hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close icon-btn" id="closeModal" aria-label="Close dialog">✕</button>
+      <div class="card-icon">📢</div>
+      <h2 id="modalTitle">Campus announcements</h2>
+      <div id="modalBody"></div>
+      <button class="primary-btn" id="modalDone">Done</button>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
