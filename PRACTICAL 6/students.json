@@ -1,0 +1,17 @@
+[
+  {"id":1,"rollNo":"IT001","name":"Aarav Patel","course":"B.Tech IT","year":2,"city":"Nadiad"},
+  {"id":2,"rollNo":"IT002","name":"Diya Shah","course":"B.Tech CSE","year":2,"city":"Ahmedabad"},
+  {"id":3,"rollNo":"IT003","name":"Krish Mehta","course":"BCA","year":1,"city":"Vadodara"},
+  {"id":4,"rollNo":"IT004","name":"Anaya Desai","course":"B.Tech IT","year":3,"city":"Surat"},
+  {"id":5,"rollNo":"IT005","name":"Reyansh Patel","course":"B.Tech CSE","year":1,"city":"Nadiad"},
+  {"id":6,"rollNo":"IT006","name":"Saanvi Joshi","course":"BCA","year":2,"city":"Rajkot"},
+  {"id":7,"rollNo":"IT007","name":"Vivaan Shah","course":"B.Tech IT","year":1,"city":"Ahmedabad"},
+  {"id":8,"rollNo":"IT008","name":"Aadhya Mehta","course":"B.Tech CSE","year":3,"city":"Anand"},
+  {"id":9,"rollNo":"IT009","name":"Advik Desai","course":"BCA","year":1,"city":"Surat"},
+  {"id":10,"rollNo":"IT010","name":"Myra Patel","course":"B.Tech IT","year":2,"city":"Vadodara"},
+  {"id":11,"rollNo":"IT011","name":"Arjun Joshi","course":"B.Tech CSE","year":2,"city":"Rajkot"},
+  {"id":12,"rollNo":"IT012","name":"Ira Shah","course":"BCA","year":3,"city":"Anand"},
+  {"id":13,"rollNo":"IT013","name":"Dev Mehta","course":"B.Tech IT","year":1,"city":"Surat"},
+  {"id":14,"rollNo":"IT014","name":"Pari Desai","course":"B.Tech CSE","year":3,"city":"Nadiad"},
+  {"id":15,"rollNo":"IT015","name":"Kabir Patel","course":"BCA","year":2,"city":"Ahmedabad"}
+]

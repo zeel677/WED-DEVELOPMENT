@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Directory</h1>
+        <p>Fetch API, Search, Filter, Sort and Pagination</p>
+
+        <div class="controls">
+            <input type="text" id="searchInput"
+                   placeholder="Search name or roll number">
+
+            <select id="courseFilter">
+                <option value="all">All Courses</option>
+                <option value="B.Tech IT">B.Tech IT</option>
+                <option value="B.Tech CSE">B.Tech CSE</option>
+                <option value="BCA">BCA</option>
+            </select>
+
+            <select id="sortSelect">
+                <option value="asc">Name: A to Z</option>
+                <option value="desc">Name: Z to A</option>
+            </select>
+        </div>
+
+        <p id="status">Loading students...</p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTable"></tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn" disabled>Previous</button>
+            <span id="pageInfo">Page 0 of 0</span>
+            <button id="nextBtn" disabled>Next</button>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
