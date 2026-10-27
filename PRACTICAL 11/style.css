@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+h1 {
+    color: #1d4ed8;
+}
+
+a {
+    color: #1d4ed8;
+}
+
+.button,
+button {
+    display: inline-block;
+    padding: 10px 14px;
+    margin: 4px 2px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.secondary {
+    background: #64748b;
+}
+
+.danger {
+    background: #dc2626;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+.filters input {
+    flex: 2;
+    min-width: 220px;
+    margin: 0;
+}
+
+.filters select {
+    flex: 1;
+    min-width: 150px;
+    margin: 0;
+}
+
+.filters button {
+    margin: 0;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #dbeafe;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+.actions {
+    min-width: 130px;
+}
+
+.actions form {
+    display: inline;
+}
+
+.actions button {
+    margin: 4px 0;
+}
+
+.success {
+    padding: 12px;
+    color: #166534;
+    background: #dcfce7;
+    border-radius: 5px;
+}
+
+.error {
+    padding: 12px;
+    color: #991b1b;
+    background: #fee2e2;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+}
+
+.pagination .current {
+    color: white;
+    background: #2563eb;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 14px;
+        margin: 8px auto;
+    }
+}
